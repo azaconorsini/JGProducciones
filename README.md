@@ -11,12 +11,12 @@
 
 ## Enlaces
 - Página frontal: https://azaconorsini.github.io/JGProducciones/
-- Otro: https://azaconorsini.github.io/JGProducciones/
+- Otro: https://azaconorsini.github.io/JGProducciones/nosotros.html
 
 ### Johan J. Azacon O.
 
 **Email:** j.azacon@gmail.com
 
-**Website:** https://azaconorsini.github.io/JGProducciones/nosotros.html
+**Website:** https://azaconorsini.github.io/JGProducciones/
 
 ![Mi imagen](https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/05f90852799043.591cd862b6828.jpg)
