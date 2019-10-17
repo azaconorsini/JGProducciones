@@ -1,0 +1,79 @@
+//==============================================================================
+//VARIABLES
+//==============================================================================
+
+//Desarrollo web: Johan J. Azacon O.
+//Website: https://jgproducciones.com.ve
+//Email: j.azacon@gmail.com - j.azacon@jgproducciones.com.ve
+//Teléfono: (+58) 04128605556
+//===============================================================================
+
+//COLORES PRINCIPALES DEL SISTEMA
+
+//COLORES BÁSICOS DEL SISTEMA
+//===============================================================================
+@color-blue-base:            #253992;
+@color-blue-cyan:            #0081c5;
+@color-magenta:              #e83793;
+@color-green-light:          #89bc36;
+@color-orange:               #fd5a02;
+
+//COLORES GRISES
+//===============================================================================
+@color-gray-base:            #000;
+@color-gray-dark:            lighten(@color-gray-base, 13.5%); // #222
+@color-gray-darken:          lighten(@color-gray-base, 20%);   // #333
+@color-gray:                 lighten(@color-gray-base, 33.5%); // #555
+@color-gray-light:           lighten(@color-gray-base, 46.7%); // #777
+@color-gray-lighten:         lighten(@color-gray-base, 93.5%); // #EEE
+
+//FUENTES PRINCIPALES
+//===============================================================================
+@font-family-lato:          'Lato', sans-serif;
+@font-family-raleway:       'Raleway', sans-serif;
+@font-family-serif:          Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+
+//TAMAÑO DE FUENTES
+//===============================================================================
+@font-size-base:             14px;
+@font-size-small:            ceil((@font-size-base*0.85)); // ~12px
+@font-size-medium:           ceil((@font-size-base*1.12)); // ~16px
+@font-size-large:            ceil((@font-size-base*1.25)); // ~18px          
+
+//TAMAÑO DE ENCABEZADOS
+//===============================================================================
+@font-size-h1:               floor((@font-size-base*2.6));  // ~36px
+@font-size-h2:               floor((@font-size-base*2.15)); // ~30px
+@font-size-h3:               ceil((@font-size-base*1.7));   // ~24px
+@font-size-h4:               @font-size-large;              // ~18px
+@font-size-h5:               @font-size-base;               // ~14px
+@font-size-h6:               @font-size-small;              // ~12px
+
+//LINE HEIGHT
+//===============================================================================
+@line-height-base:           1.428571429; // 20/14
+@line-height-computed:       floor((@font-size-base*@line-height-base)); // ~20px
+
+//GROSOR DE FUENTES
+//===============================================================================
+@font-weight-extralight:     200;
+@font-weight-light:          300;
+@font-weight-regular:        400;
+@font-weight-medium:         500;
+@font-weight-semibold:       600;
+@font-weight-bold:           700;
+@font-weight-extrabold:      800;
+@font-weight-black:          900;
+
+//DIRECTORIO
+//===============================================================================
+@images-path:               "../images";
+@css-path:                  "../css";
+@icon-path:                 "..fonts";
+
+//BORDES REDONDEADOS
+//===============================================================================
+@border-radus-small:        2px;
+@border-radius-base:        4px;
+@border-radius-large:       6px;

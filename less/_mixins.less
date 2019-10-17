@@ -1,0 +1,68 @@
+//==========================================================
+//MIXINS
+//==========================================================
+
+//Desarrollo web: Johan J. Azacon O.
+//Website: https://jgproducciones.com.ve
+//Email: j.azacon@gmail.com - j.azacon@jgproducciones.com.ve
+//Teléfono: (+58) 04128605556
+
+.prefixed (@property, @value) {
+  & when (@webkit = true) {
+    -webkit-@{property}: @value;
+  }
+  & when (@moz = true) {
+    -moz-@{property}: @value;
+  }
+  & when (@ms = true) {
+    -ms-@{property}: @value;
+  }
+  & when (@o = true) {
+    -o-@{property}: @value;
+  }
+  @{property}: @value;
+}
+
+@webkit: true;
+@moz:    true;
+@ms:     false;
+@o:      false;
+
+.opacity (@opacity) {
+  opacity: @opacity/100;
+  filter: "alpha(opacity=@{opacity})"
+}
+
+.transition (@property, @duration) {
+	-webkit-transition: @property @duration;
+	   -moz-transition: @property @duration;
+	        transition: @property @duration;
+}
+.full-transition (@property, @duration, @timing-function) {
+  -webkit-transition: @transition-property @transition-duration @transition-timing-function;
+     -moz-transition: @transition-property @transition-duration @transition-timing-function;
+          transition: @transition-property @transition-duration @transition-timing-function;
+}
+.border-radius (@top-left @top-right @bottom-left @bottom-right) {
+  -webkit-border-radius: @top-left @top-right @bottom-left @bottom-right;
+     -moz-border-radius: @top-left @top-right @bottom-left @bottom-right;
+      -ms-border-radius: @top-left @top-right @bottom-left @bottom-right;
+       -o-border-radius: @top-left @top-right @bottom-left @bottom-right;
+          border-radius: @top-left @top-right @bottom-left @bottom-right;
+}
+.box-shadow (@x @y @blur @alpha) {
+  -webkit-box-shadow: @x @y @blur @alpha;
+     -moz-box-shadow: @w @y @blur @alpha;
+          box-shadow: @x @y @blur @alpha
+}
+.button-variant (@color, @background-color, @border-color) {
+	color: @color;
+	background-color: @background-color;
+	border-color: @border-color;
+
+	&:hover, &:hover:focus {
+    color: @color;
+		background-color: darken(@background-color, 6%);
+		border-color: darken(@border-color, 3%);
+	}
+}

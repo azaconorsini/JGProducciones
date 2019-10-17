@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i')
+@import variables.sass, mixins.sass
+* 
+	margin: 0
+
+
+html, body
+	width: 100%
+	height: 100%
+
+body 
+	font: 
+		family: $font-family-raleway
+		size: $font-size-base
+		weight: $font-weight-regular 
+	color: $color-gray-darken
+	line-height: 22px
+
+figure 
+	margin: 0
+	padding: 0
+
+ol, ul 
+	margin: 0
+
+strong, b
+	font-weight: $font-weight-black
+
+h1 
+	font-size: $font-size-h1
+h2 
+	font-size: $font-size-h2
+h3 
+	font-size: $font-size-h3
+h4 
+	font-size: $font-size-h4
+h5 
+	font-size: $font-size-h5
+h6 
+	font-size: $font-size-h6
+
+p
+	line-height: 22px
+	display: block
+
+a 
+	outline: none
+	+transition(color 0.35s linear)
+
+	&:hover, &:hover:focus
+		text-decoration: none
+	&:focus 
+		color: inherit
+
+@media only screen and (max-width: 768px) 
+	body 
+		+background-linear-gradient(#333, #000)
